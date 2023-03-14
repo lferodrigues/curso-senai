@@ -1,0 +1,43 @@
+.microsoft{
+  width: 350px;
+  margin: 25px auto;
+}
+.quadrado.vermelho{
+  background-color: #f35322;
+}
+.quadrado.amarelo{
+  background-color:#fFba05 ;
+}
+.quadrado.azul{
+  background-color: #05a6f1 ;
+}
+.quadrado.verde{
+  background-color: #81dc05;
+}
+
+.quadrado{
+  width: 150px;
+  height: 150px;
+  margin: 0 10px 10px 0;
+  float: left;
+}
+
+.box{
+  width: 400px;
+  background-color: antiquewhite;
+  border: 3px solid yellow;
+  padding: 30px;
+  margin: 20px;
+}
+.btn{
+  border-radius: 50px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px
+  padding-top: 5px;
+  background-color: forestgreen;
+  font-family: Verdana, Gevena, Tahoma, sans-serif;
+  font=size: 20px;
+  font-weight: bold;
+
+}
