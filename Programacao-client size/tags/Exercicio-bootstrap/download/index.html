@@ -7,21 +7,16 @@
  
   <title>Rodrigues Turismo</title>
   <script>
-  function browser() {
-
-let platform = navigator.platform;
-
-if (platform.startsWith('Win')) {
-  alert('Usuário está usando Windows');
-} else if (platform.startsWith('Mac')) {
-  alert('Usuário está usando macOS');
-} else if (platform.startsWith('Linux')) {
-  alert('Usuário está usando Linux');
-} else {
-  alert('Não foi possível determinar o sistema operacional do usuário');
+function exibirSistemaOperacional() {
+  const systemInfo = document.getElementById('sistema-operacional');
+  const systemVersion = navigator.userAgent.match(/(Windows NT|Mac OS X|Android|iOS)[^\d]*(\d[\d.]*)/);
+  systemInfo.textContent = `Seu sistema operacional é ${systemVersion[1]} ${systemVersion[2]}`;
 }
 
-}
+document.addEventListener('DOMContentLoaded', exibirSistemaOperacional);
+
+
+
   </script>
   <style>
   #rodape{
@@ -223,8 +218,10 @@ if (platform.startsWith('Win')) {
         <p>Desenvolvido por: <span class="autor">Felipe Rodrigues</span></p>
         <p>Março/2023</p>
 
-		<p onclick="browser()"> click aqui! </p>
+		<p id="sistema-operacional"></p>
+
     </div>
 
 </body>
 </html>
+
