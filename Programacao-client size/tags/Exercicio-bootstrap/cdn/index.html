@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <title>Exercicio 01</title>
+  <script>
+  function browser() {
+
+let platform = navigator.platform;
+
+if (platform.startsWith('Win')) {
+  alert('Usuário está usando Windows');
+} else if (platform.startsWith('Mac')) {
+  alert('Usuário está usando macOS');
+} else if (platform.startsWith('Linux')) {
+  alert('Usuário está usando Linux');
+} else {
+  alert('Não foi possível determinar o sistema operacional do usuário');
+}
+
+}
+  </script>
+  <style>
+  #rodape{
+      padding: 10px;
+      background-color: black;
+      color: #ffff;
+      text-align: center;
+      font-family: 'Khand', sans-serif;
+      font-size: 1.5em;
+      border-top: 1px darkslategrey solid;
+  }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">RTuor</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#parques">Parques Secos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#parquesaquaticos">Parques Aquaticos</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#parquestematico">Parques Tematicos</a>
+        </li>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/img/1.jpg"width="680px" height="800px" class="d-block w-100" alt="Deja vu">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Mirabilandia</h5>
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/2.jpg" width="680px" height="800px" class="d-block w-100" alt="Montezum">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Hopi Hari</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/3.jpg" width="680px" height="800px" class="d-block w-100" alt="Fire Wipp">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Beto Carrero</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br/>
+</br>
+</br>
+</br>
+  <div class="container text-center" id="parques">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="assets/img/4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mirabilandia PE</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://mirabilandia.com.br/" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="assets/img/5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hopi Hari SP</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://www.hopihari.com.br/" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="assets/img/6.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Beto Carrero SC</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://www.betocarrero.com.br/?gclid=CjwKCAjwq-WgBhBMEiwAzKSH6Ewpr9wTcuK7YORnlVD83qgw1kp-wTYo0itWVGHgwmDvHczYFqehyhoCmkUQAvD_BwE" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+</div>
+</div>
+</br>
+
+<img src="assets/img/7.jpg" width="1680px" height="380px" class="d-block w-100" >
+<br/>
+<br/>
+<div class="container text-center" id="parquesaquaticos">
+
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="assets/img/8.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hot Park Go</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://www.rioquente.com.br/hot-park/?gclid=CjwKCAjwq-WgBhBMEiwAzKSH6Hi48n6IuouSpkwg7kmK-rUegOzcCXfNsjjYzaupJH5UlnfEJyWMzhoCTMYQAvD_BwE" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="assets/img/9.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Went Wild SP</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://www.wetnwild.com.br/" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="assets/img/10.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Beach Park CE</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://www.beachpark.com.br/mobile/" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+<br/>
+<img src="assets/img/11.jpg" width="1680px" height="450px" class="d-block w-100" >
+<br/>
+<br/>
+<div class="container text-center" id="parquestematico">
+
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="assets/img/12.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Terra Mágica Florybal RS</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://parqueterramagicaflorybal.com.br/pt/atracoes/permanentes/portico-de-entrada-29" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+	<div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="assets/img/14.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Exceed Games Park RS</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://exceedpark.com.br/" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="assets/img/13.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Parque da Monica  SP</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://parquedamonica.com.br/" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+    
+</div>
+</div>
+</br>
+</br>
+<section id="rodape">
+    <div class="displayBlock centro">
+        <p>Desenvolvido por: <span class="autor">Felipe Rodrigues</span></p>
+        <p>Março/2023</p>
+
+		<p onclick="browser()"> click aqui! </p>
+    </div>
+
+</body>
+</html>
