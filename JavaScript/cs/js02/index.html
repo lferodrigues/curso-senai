@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>js02</title>
+    <script src="./js/scripts.js"></script>
+    <link rel="stylesheet" href="./css/estilo.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Acesso e Alteração de Propriedades usando JS</h1>
+    </div>
+    <div class="divAltera">
+      <h2>document.getElementById()</h2>
+      <p id="p1">
+        Parágrafo id = "p1" - padrão oculto -
+        Parágrafo número 01 - texto original
+      </p>
+    </div>
+    <div class="divAltera">
+      <h2>document.getElementsByTagName()</h2>
+      <p>
+        Parágrafo número 02 - texto original
+      </p>
+      <p>
+        Parágrafo número 03 - texto original
+      </p>
+    </div>
+    <div class="divAltera">
+      <h2>document.getElementsByName()</h2>
+      <input type="button" name="btRed" value="Vermelho">
+    </div>
+    <div class="divAltera">
+      <h2>document.getElementsByClassName()</h2>
+    </div>
+    <div class="cBotoes">
+      <input type="submit" onclick="mostrarParagrafo()" name="bId" value="ById">
+      <input type="submit" onclick="alteraConteudo()" name="bTagName" value="ByTagName">
+      <input type="submit" onclick="alteraBotao()" name="btName" value="ByName">
+      <input type="submit" onclick="alteraCor()" name="bClassName" value="ByClassName">
+    </div>
+  </body>
+</html>
